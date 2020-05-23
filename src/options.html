@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        $(function(){
+            $("#save").click(function(){
+                localStorage["message"] = $("#message").val();
+            });
+        });
+    </script>
+    <title>OptionWindow</title>
+</head>
+<body>
+    <input id="message" type="text">
+    <input id="save" type="button" value="SAVE">
+</body>
+</html>
