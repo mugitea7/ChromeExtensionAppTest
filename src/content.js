@@ -7,4 +7,10 @@ chrome.contextMenus.create({
             window.alert('Hello,GoogleExtension!');
         }
     }
-})
+});
+
+$(function () {
+    $("#save").click(function () {
+        localStorage["message"] = $("#message").val();
+    });
+});
